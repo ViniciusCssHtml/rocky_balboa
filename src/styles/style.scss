@@ -50,6 +50,7 @@ main {
       font-family: "Oswald", sans-serif;
       a {
         color: variaveis.$corText;
+        padding: 30px;
       }
       &:hover {
         background-color: variaveis.$corDetalhe;
