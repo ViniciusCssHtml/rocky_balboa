@@ -40,7 +40,7 @@ main {
       border-radius: 50%;
       border: none;
       background-color: variaveis.$corFundoButton;
-
+      z-index: 200;
       border: 2px solid transparent;
       font-size: 1.3rem;
       font-family: "Oswald", sans-serif;
