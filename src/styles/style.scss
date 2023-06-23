@@ -3,6 +3,7 @@
 @use "learning";
 @use "faq";
 @use "instrutor";
+@use "newsletter";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Oswald:wght@600;700&display=swap");
 
 * {
@@ -11,7 +12,60 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   background-color: variaveis.$corDeFundo;
+}
+main {
+  position: relative;
+}
+.nav {
+  position: fixed;
+  right: 20px;
+  top: 250px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__container__itens {
+    button {
+      display: flex;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      background-color: variaveis.$corFundoButton;
+
+      border: 2px solid transparent;
+      font-size: 1.3rem;
+      font-family: "Oswald", sans-serif;
+      a {
+        color: variaveis.$corText;
+      }
+      &:hover {
+        background-color: variaveis.$corDetalhe;
+        border: 2px solid variaveis.$corText;
+        transition: 0.5s;
+      }
+      @media (max-width: 700px) {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  background-color: variaveis.$corDetalhe;
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  color: variaveis.$corText;
 }

@@ -10,15 +10,39 @@
 
 <body>
   <main>
-    <section class="introduction">
+    <header class="nav">
+      <ul class="nav__container">
+        <li class="nav__container__itens">
+          <button>
+            <a href="#introduction">1</a>
+          </button>
+        </li>
+        <li class="nav__container__itens">
+          <button>
+            <a href="#learning">2</a>
+          </button>
+        </li>
+        <li class="nav__container__itens">
+          <button>
+            <a href="#instrutores">3</a>
+          </button>
+        </li>
+        <li class="nav__container__itens">
+          <button>
+            <a href="#faq">4</a>
+          </button>
+        </li>
+      </ul>
+    </header>
+    <section class="introduction" id="introduction">
       <img src="./dist/images/rocky-balboa-banner-02.jpg" alt="Rocky Balboa" class="introduction__img">
       <div class="introduction__info">
         <h1 class="introduction__info__title">ROCKY BALBOA</h1>
         <p class="introduction__info__text">Você está pronto para abraçar o espírito de Rocky Balboa e alcançar grandes conquistas? Descubra o poder da determinação e da perseverança com nosso curso exclusivo! Aprenda as estratégias comprovadas para superar obstáculos, traçar metas claras e alcançar o sucesso em sua vida pessoal e profissional. Não deixe que os desafios te impeçam de chegar ao topo! Clique aqui e junte-se a nós nessa jornada transformadora. O próximo round começa agora!</p>
-        <a href="#" class="introduction__info__link">ASSINE JÁ!</a>
+        <a href="#newsletter" class="introduction__info__link">ASSINE JÁ!</a>
       </div>
     </section>
-    <section class="learning">
+    <section class="learning" id="learning">
       <h2 class="learning__subTitle">O QUE VOCÊ VAI APRENDER</h2>
       <div class="learning__topics">
         <div class="learning__topics__info">
@@ -51,7 +75,7 @@
         </div>
       </div>
     </section>
-    <section class="instrutores">
+    <section class="instrutores" id="instrutores">
       <h2 class="instrutores__subtitulo">INSTRUTORES</h2>
       <ul class="instrutores__container">
         <li class="instrutores__container__lista">
@@ -84,7 +108,7 @@
         </div>
       </section>
     </section>
-    <article class="faq">
+    <article class="faq" id="faq">
       <h2 class="faq__subTitle">DUVIDAS???</h2>
       <dl class="faq__lista">
         <dt class="faq__lista__pergunta">Qual é o objetivo deste curso?</dt>
@@ -101,7 +125,20 @@
         <dd class="faq__lista__resposta">Estamos comprometidos com a sua satisfação e confiança em nosso curso. Por isso, oferecemos uma garantia de 7 dias. Se, dentro desse período, você sentir que o curso não atende às suas expectativas ou não está satisfeito com o conteúdo, entre em contato conosco e faremos o reembolso integral do valor investido, sem perguntas. Queremos que você se sinta seguro em sua decisão de participar deste programa e tenha a oportunidade de experimentar o potencial transformador que ele oferece.</dd>
       </dl>
     </article>
+    <article class="newsletter" id="newsletter">
+      <div class="newsletter__info">
+        <h3 class="newsletter__info__title">Newsletter</h3>
+        <p class="newsletter__info__text">assine e fique por dentro das novidades</p>
+      </div>
+      <form class="newsletter__form">
+        <input type="email" placeholder="Seu e-mail">
+        <button type="submit">ASSINAR</button>
+      </form>
+    </article>
   </main>
+  <footer class="footer">
+    <p>© Todos os direitos reservados.</p>
+  </footer>
   <script src="./dist/script/script.js"></script>
 </body>
 

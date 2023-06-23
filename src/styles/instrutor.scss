@@ -7,22 +7,35 @@
     text-align: center;
     font-size: 4rem;
     font-family: "Oswald", sans-serif;
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     color: variaveis.$corTitle;
+    @media (max-width: 900px) {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 600px) {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
   }
   &__container {
     &__lista {
       display: flex;
       justify-content: center;
       gap: 50px;
+      @media (max-width: 600px) {
+        gap: 20px;
+      }
       img {
         max-width: 80px;
         height: 80px;
         width: 100%;
         cursor: pointer;
         border-radius: 50%;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
+        @media (max-width: 600px) {
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -30,6 +43,9 @@
 
 .instrutor {
   margin-top: 40px;
+  @media (max-width: 600px) {
+    margin-top: 20px;
+  }
   &__info {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -37,6 +53,9 @@
     gap: 40px;
     display: none;
 
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
     &__container {
       h3 {
         font-size: 2.5rem;
@@ -54,6 +73,9 @@
       width: 100%;
       height: 100%;
       border-radius: 4px;
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
   }
   &__info__active {
