@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass",
+    "watch": "gulp watch",
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,7 +13,11 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.63.5"
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.63.5",
+    "watch": "^1.0.2"
   }
 }

@@ -1,0 +1,17 @@
+@use "variaveis";
+@use "introduction";
+@use "learning";
+@use "faq";
+@use "instrutor";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Oswald:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: variaveis.$corDeFundo;
+}
